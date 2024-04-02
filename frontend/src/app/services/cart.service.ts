@@ -51,7 +51,7 @@ export class CartService {
     const cartJson = JSON.stringify(this.cart);
     localStorage.setItem('Cart', cartJson);
     this.cartSubject.next(this.cart) // notify the change in the cart to all the observable
-  }
+  }  
 
   private getCartFromLocalStoreage():Cart{
     const cartJson = localStorage.getItem('Cart');
