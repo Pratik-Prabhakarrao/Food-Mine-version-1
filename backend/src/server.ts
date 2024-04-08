@@ -17,8 +17,9 @@ app.use(cors({
 }));
 
   
+
 app.use("/api/foods", foodRouter);
-app.use('/api/users', userRouter);
+app.use("/api/users", userRouter);
 
 const port = 5000;
 app.listen(port, () => {
